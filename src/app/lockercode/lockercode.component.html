@@ -1,0 +1,27 @@
+<header></header>
+<navbar></navbar>
+<dates></dates>
+<places></places>
+<div class="container">
+  <div class="box" *ngFor='let luggage of storage'>
+    <p class='txt'>locker nr {{luggage.place}}</p>
+    <p class='txt2'>Secure Luggage Storage 24/7</p>
+    <p class='txt3'>{{luggage.name}}</p>
+    <div class="icon-icon">
+      <i class="fa fa-unlock-alt myicon " aria-hidden="true"></i>
+    </div>
+    <button class='btn-btn' (click)='storeLuggage(luggage)'><span class="btn-btn-book">book now</span></button>
+    <span *ngIf="luggage.show">
+      <div class="description">
+        <p class='txt'>locker nr {{luggage.place}}</p>
+        <p class='txt2'>Secure Luggage Storage 24/7</p>
+        <p class='txt4'>{{luggage.name1}}</p>
+        <div class="icon-icon">
+          <i class="fa fa-lock myicon " aria-hidden="true"></i>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+<insurance></insurance>
+<footer></footer>

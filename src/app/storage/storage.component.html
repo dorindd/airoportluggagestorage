@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="box">
+    <p class="terminal">
+      <i class="fa fa-plane myicon" aria-hidden="true"></i>Terminal 1
+    </p>
+    <div class="icons">
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcasemyicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+    </div>
+    <button class="btn-btn" (click)="getData()">
+      <span class="semn-btn">Check Availability</span>
+    </button>
+    <p class="txt1" *ngIf="show">
+      Luggage storage for passengers.
+    </p>
+    <div *ngIf="show1">
+      <ngb-alert [dismissible]="false" class="alert-alert">
+        <strong class="txt-msg">{{ message }}</strong>
+        <div (click)="getBack()" class="alert-btn">
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </div>
+      </ngb-alert>
+    </div>
+  </div>
+  <div class="box">
+    <p class="terminal">
+      <i class="fa fa-plane myicon" aria-hidden="true"></i>Terminal 2
+    </p>
+    <div class="icons">
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcasemyicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+    </div>
+    <button class="btn-btn" (click)="getData1()">
+      <span class="semn-btn">Check Availability</span>
+    </button>
+    <p class="txt1" *ngIf="show3">
+      Luggage storage for passengers.
+    </p>
+    <div *ngIf="show4">
+      <ngb-alert [dismissible]="false" class="alert-alert">
+        <strong class="txt-msg">{{ message }}</strong>
+        <div (click)="getBack1()" class="alert-btn">
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </div>
+      </ngb-alert>
+    </div>
+  </div>
+  <div class="box">
+    <p class="terminal">
+      <i class="fa fa-plane myicon" aria-hidden="true"></i>Terminal 3
+    </p>
+    <div class="icons">
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcasemyicon1" aria-hidden="true"></i>
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+    </div>
+    <button class="btn-btn" routerLink='/lockercode'>
+      <span class="semn-btn">Check Availability</span>
+    </button>
+    <p class="txt1">
+      Luggage storage for passengers.
+    </p>
+    <div *ngIf="show10">
+      <ngb-alert [dismissible]="false" class="alert-alert">
+        <strong class="txt-msg">{{ message }}</strong>
+        <div (click)="getBack5()" class="alert-btn">
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </div>
+      </ngb-alert>
+    </div>
+  </div>
+</div>

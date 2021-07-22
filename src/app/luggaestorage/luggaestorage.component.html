@@ -1,0 +1,45 @@
+<header></header>
+<navbar></navbar>
+<dates></dates>
+<places></places>
+<h1 class='txt'>Luggage storage</h1>
+<p class='txt-txt'>Informations</p>
+<p class='txt-txt1'>Your 4-digit code is a security code that protects customers.</p>
+<p class='txt-txt1'>Validate your code and go to the payment section</p>
+<div class="container">
+  <div class="box" *ngFor="let luggage of storage">
+    <p class='txt2'> locker nr {{luggage.place}}</p>
+    <div class="icon-icon">
+      <i class="fa fa-lock myicon" aria-hidden="true"></i>
+    </div>
+    <div class="icon-icon1">
+      <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
+    </div>
+    <p class='txt3'>BOOKED</p>
+    <p class='txt4'>Enter your 5-digit code </p>
+    <p class='txt-txt4'>Don't share it with anyone else.</p>
+    <button mat-raised-button class="btn-enter" (click)="enter(luggage)"><span class='check-code'> Get Your Code
+      </span></button>
+    <button class='btn-btn1' mat-raised-button color="warn" (click)='cancel(luggage)'><span
+        class='cancel-btnname'>Cancel</span></button>
+    <p class="terminal">
+      <i class="fa fa-plane myicon" aria-hidden="true"></i><span class="ter-ter">Terminal 3</span>
+    </p>
+    <span *ngIf="luggage.showenter">
+      <div class='display'>
+        <p class='txt1'>Luggage storage code: <span class='code'>{{luggage.code}}</span></p>
+        <div class="container-form-name">
+          <mat-form-field appearance="fill" class="container-form-short1">
+            <mat-label class="label-name">code</mat-label>
+            <input matInput type="text" [(ngModel)]="nume" name="nume" />
+          </mat-form-field>
+        </div>
+        <button class='btn-btn' mat-raised-button color="primary" (click)="getcheck(luggage)"><span
+            class='check-btnname'>check</span></button>
+      </div>
+    </span>
+  </div>
+</div>
+<insurance></insurance>
+<footer></footer>
+<router-outlet></router-outlet>

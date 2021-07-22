@@ -1,0 +1,64 @@
+.places {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #487eb0;
+}
+.places p {
+  color: #f5f6fa;
+  text-align: center;
+  padding: 38px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+svg {
+  background: #fff;
+}
+svg text {
+  font-weight: 600;
+  font-size: 25px;
+  stroke-width: 0.5px;
+  fill: transparent;
+  stroke: white;
+  letter-spacing: 3px;
+  animation: effect 3s infinite alternate;
+}
+@keyframes effect {
+  0% {
+    stroke-dasharray: 0 70%;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: 10%;
+  }
+}
+@media screen and (max-width:575px) {
+  .places {
+    background-color: rgb(63, 81, 181);
+    height: 30px;
+  }
+  svg text {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .places {
+    background-color: rgb(63, 81, 181);
+    height: 30px;
+  }
+  svg text {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .places {
+    background-color: rgb(63, 81, 181);
+    height: 30px;
+  }
+  svg text {
+    visibility: hidden;
+  }
+}

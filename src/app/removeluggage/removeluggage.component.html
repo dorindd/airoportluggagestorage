@@ -1,0 +1,26 @@
+<header></header>
+<navbar></navbar>
+<dates></dates>
+<advertising></advertising>
+<section>
+<h1 class='txt'>pay and take your luggage</h1>
+<div class="container">
+  <div class="box" *ngFor="let luggage of storage1">
+    <p class='txt1'>locker nr {{luggage.place}}</p>
+    <p class='txt1'>Code: <span class='code'>{{luggage.code}}</span></p>
+    <div class="icon-icon">
+      <i class="fa fa-suitcase myicon" aria-hidden="true"></i>
+    </div>
+    <p class='txt1'>pay and take your luggage</p>
+    <div class="button">
+      <div class='btn-btn' (click)="inc(luggage)"><i class="fa fa-plus myicon1" aria-hidden="true"></i></div>
+      <input type="text" value="{{luggage.hours}}"><i class="fa fa-clock-o myicon2" aria-hidden="true"></i>
+      <div class='btn-btn' (click)="dec(luggage)"><i class="fa fa-minus myicon1" aria-hidden="true"></i></div>
+    </div>
+    <p class='price'>Price:<span class='price-value'>{{luggage.hours*luggage.price+5 | currency: "RON" }}</span></p>
+    <button class='btn-remove' (click)='removeStorage(luggage)'>Pay</button>
+  </div>
+</div>
+</section>
+<insurance></insurance>
+<footer></footer>

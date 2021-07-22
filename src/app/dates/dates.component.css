@@ -1,0 +1,145 @@
+.mycontainer {
+  width: 100%;
+  height: 495px;
+  background-color: #5B5E64;
+}
+.txt {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 45px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.myicon {
+  position: relative;
+  color: white;
+  right: 5px;
+  font-size: 45px;
+}
+img {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+.mycol {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+.datepicker1 {
+  position: relative;
+  left: 35px;
+  top: 40px;
+}
+mat-label {
+  color: white;
+  text-transform: uppercase;
+}
+.price {
+  position: relative;
+  left: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 80px;
+}
+.price-txt {
+  width: 200px;
+  height: 30px;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  top: 140px;
+  left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 20px;
+  padding: 3px;
+}
+.demo-inline-calendar-card {
+  width: 300px;
+  height: 385px;
+}
+.selected {
+  text-align: center;
+  color: red;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 575px) {
+  .mycontainer {
+    width: 100%;
+    height: 520px;
+  }
+  .price {
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+  }
+  .price-txt {
+    width: 150px;
+    position: relative;
+    right: 20px;
+    top: 16px;
+    font-size: 12px;
+  }
+  .mycol {
+    position: relative;
+    top: 2px;
+  }
+  .myicon {
+    position: relative;
+    right: 12px;
+    font-size: 25px;
+  }
+  .txt {
+    position: relative;
+    right: 25px;
+    font-size: 15px;
+  }
+  .demo-inline-calendar-card {
+    width: 220px;
+    height: 295px;
+  }
+  .selected {
+    font-size: 10px;
+  }
+  img {
+    width: 40%;
+    height: 120px;
+  }
+  .mycol1 {
+    position: relative;
+    bottom: 480px;
+    left: 200px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .demo-inline-calendar-card {
+    position: relative;
+    right: 40px;
+    width: 220px;
+    height: 300px;
+  }
+  img {
+    position: relative;
+    top: 90px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .demo-inline-calendar-card {
+    width: 300px;
+    height: 380px;
+  }
+}
