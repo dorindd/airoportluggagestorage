@@ -8,7 +8,7 @@ import { SharedatatwoService } from '../sharedatatwo.service';
 })
 export class TerminalplacesComponent implements OnInit {
   places:any;
-  myview: any;
+  myview: any
 
   constructor(private service: SharedatatwoService) {}
 
@@ -23,7 +23,7 @@ export class TerminalplacesComponent implements OnInit {
       if (this.places.length > 0) {
         setTimeout(() => {
           this.myview = false;
-        }, 2500);
+        }, 2800);
       }
     });
   }

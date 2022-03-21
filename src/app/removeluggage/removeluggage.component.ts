@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedatatwoService } from '../sharedatatwo.service';
 import { SharedataService } from '../sharedata.service';
+
 @Component({
   selector: 'removeluggage',
   templateUrl: './removeluggage.component.html',
@@ -11,7 +12,7 @@ storage1:any[]=[]
 vizibil:boolean=true;
 
 
-  constructor(private mysharedata1:SharedataService,private mysharedata:SharedatatwoService) { }
+  constructor(private mysharedata1:SharedataService,private mysharedata:SharedatatwoService,) { }
   ngOnInit(): void {
 
 
@@ -26,6 +27,7 @@ vizibil:boolean=true;
    this.mysharedata1.getToggle(luggage);
    this.mysharedata.getToggle1(luggage);
    this.mysharedata.show.next(this.vizibil)
+
 
   }
   inc(luggage:any){

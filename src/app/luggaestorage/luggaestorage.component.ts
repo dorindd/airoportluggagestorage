@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { SharedataService } from '../sharedata.service';
 import { SharedatatwoService } from '../sharedatatwo.service';
 @Component({
@@ -14,7 +15,8 @@ payment:boolean = true;//pay
 
   constructor(
     private mysharedata: SharedataService,
-    private mysharedata1: SharedatatwoService
+    private mysharedata1: SharedatatwoService,
+
   ) {}
   ngOnInit(): void {
     this.storage = this.mysharedata.getStorage();
@@ -39,7 +41,8 @@ payment:boolean = true;//pay
       this.mysharedata.removeFromStorage(luggage);
       this.nume = '';
       this.mysharedata1.iconshow.next(this.payment)//pay
-     
+
+
 
 
     }
