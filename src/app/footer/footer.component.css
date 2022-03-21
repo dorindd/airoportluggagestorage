@@ -2,7 +2,7 @@
   background-color: #34495e;
   width: 100%;
   display: block;
-  height: 410px;
+  height: 390px;
   position: relative;
   top: 50px;
 }
@@ -72,7 +72,7 @@
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 10px;
+  font-size:9px;
 }
 .bottom-footer {
   background-color: black;
@@ -135,6 +135,12 @@
   .icon-icon {
     font-size: 18px;
   }
+
+  .allicons {
+    position: relative;
+    top:8px;
+  }
+
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   :host {
@@ -187,7 +193,7 @@
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   :host {
-    height: 350px;
+    height: 370px;
   }
   .box {
     width: 200px;

@@ -57,7 +57,7 @@
   justify-content: flex-start;
 }
 input {
-  width: 15%;
+  width: 20%;
   border: none;
   outline: none;
   background-color: transparent;
@@ -85,6 +85,7 @@ input {
   text-transform: uppercase;
   font-size: 12px;
   background-color: black;
+  text-align: center;
 }
 .price {
   text-align: center;
@@ -103,7 +104,7 @@ input {
 
   .box {
     width: 160px;
-    height: 180px;
+    height: 195px;
     margin: 5px;
   }
   .txt {
@@ -134,9 +135,15 @@ input {
   .myicon1 {
     font-size: 13px;
   }
+  input {
+    position: relative;
+    bottom: 2px;
+    right:5px;
+    width: 22%;
+  }
   .myicon2 {
     position: relative;
-    left: 30px;
+    left: 20px;
     bottom: 4px;
     font-size: 27px;
   }
@@ -144,8 +151,11 @@ input {
     font-size: 10px;
     position: relative;
     bottom: 20px;
+
   }
   .price-value {
+    position: relative;
+  left:1px;
     font-size: 11px;
   }
   .btn-remove {
@@ -153,13 +163,17 @@ input {
     bottom: 87px;
     left: 50px;
     width: 25%;
+  }
+  .pay-pay{
+    font-size:9px;
+text-align: center;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .box {
     width: 160px;
-    height: 180px;
+    height: 195px;
     margin: 5px;
   }
   .txt {
@@ -190,9 +204,16 @@ input {
   .myicon1 {
     font-size: 13px;
   }
+
+  input {
+    position: relative;
+    bottom: 2px;
+    right:5px;
+    width: 22%;
+  }
   .myicon2 {
     position: relative;
-    left: 30px;
+    left: 20px;
     bottom: 4px;
     font-size: 27px;
   }
@@ -200,8 +221,11 @@ input {
     font-size: 10px;
     position: relative;
     bottom: 20px;
+
   }
   .price-value {
+    position: relative;
+    left:1px;
     font-size: 11px;
   }
   .btn-remove {
@@ -210,12 +234,16 @@ input {
     left: 50px;
     width: 25%;
   }
+  .pay-pay{
+    font-size:9px;
+    text-align: center;
+      }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .box {
     width: 160px;
-    height: 180px;
+    height: 195px;
     margin: 20px;
   }
   .txt {
@@ -246,9 +274,16 @@ input {
   .myicon1 {
     font-size: 13px;
   }
+
+  input {
+    position: relative;
+    bottom: 2px;
+    right:5px;
+    width: 22%;
+  }
   .myicon2 {
     position: relative;
-    left: 30px;
+    left: 20px;
     bottom: 4px;
     font-size: 27px;
   }
@@ -256,8 +291,11 @@ input {
     font-size: 10px;
     position: relative;
     bottom: 20px;
+
   }
   .price-value {
+    position: relative;
+    left:1px;
     font-size: 11px;
   }
   .btn-remove {
@@ -266,12 +304,16 @@ input {
     left: 50px;
     width: 25%;
   }
+  .pay-pay{
+    font-size:9px;
+    text-align: center;
+      }
 }
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 
   .box {
     width: 160px;
-    height: 180px;
+    height: 195px;
     margin: 40px;
   }
 }

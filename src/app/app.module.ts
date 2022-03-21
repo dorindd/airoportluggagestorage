@@ -25,6 +25,7 @@ import { AdvertisingComponent } from './advertising/advertising.component';
 
 import {MatCardModule} from '@angular/material/card';
 import { LocationComponent } from './location/location.component';
+import { TerminalplacesComponent } from './terminalplaces/terminalplaces.component';
 
 
 
@@ -45,6 +46,7 @@ import { LocationComponent } from './location/location.component';
     RemoveluggageComponent,
     AdvertisingComponent,
     LocationComponent,
+    TerminalplacesComponent,
     
   ],
   imports: [

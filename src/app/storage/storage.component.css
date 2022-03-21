@@ -65,7 +65,7 @@
 .alert-alert {
   display: block;
   margin: 0 auto;
-  width: 270px;
+  width: 310px;
   z-index: 1;
   background-color: #ebf5fc;
   border: none;
@@ -74,7 +74,7 @@
 }
 .alert-btn {
   position: relative;
-  top:2px;
+ bottom:20px;
   float: right;
   border: none;
   outline: none;
@@ -83,8 +83,10 @@
 .txt-msg {
   color: red;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing:1px;
   font-size: 10px;
+ display:flex;
+ justify-content: center;
 }
 .btn-btn {
   display: block;
@@ -140,11 +142,12 @@
   }
   .btn-btn {
     position: relative;
-    top: 90px;
-    width: 80px;
+    top: 100px;
+    width: 100px;
     height: 20px;
   }
   .semn-btn {
+    text-transform:none;
     font-size: 7px;
     position: relative;
     bottom: 2px;
@@ -158,11 +161,14 @@
     width: 200px;
   }
   .txt-msg {
-    font-size: 6px;
+    text-transform:none;
+    letter-spacing:none;
+    font-size:8px;
   }
   .alert-btn {
     position: relative;
-    top: 3px;
+    bottom:18px;
+    left:11px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -186,11 +192,12 @@
   }
   .btn-btn {
     position: relative;
-    top: 90px;
-    width: 80px;
+    top: 100px;
+    width: 100px;
     height: 20px;
   }
   .semn-btn {
+    text-transform:none;
     font-size: 7px;
     position: relative;
     bottom: 2px;
@@ -204,11 +211,15 @@
     width: 200px;
   }
   .txt-msg {
-    font-size: 6px;
+    text-transform:none;
+    letter-spacing:none;
+    font-size: 9px;
   }
   .alert-btn {
     position: relative;
-    top: 3px;
+    bottom:18px;
+    left:5px;
+
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -232,11 +243,12 @@
   }
   .btn-btn {
     position: relative;
-    top: 90px;
-    width: 80px;
+    top: 100px;
+    width: 100px;
     height: 20px;
   }
   .semn-btn {
+    text-transform:none;
     font-size: 7px;
     position: relative;
     bottom: 2px;
@@ -250,10 +262,12 @@
     width: 240px;
   }
   .txt-msg {
-    font-size: 8px;
+    text-transform:none;
+    letter-spacing:none;
+    font-size: 9px;
   }
   .alert-btn {
     position: relative;
-    top: 1px;
+    bottom:18px;
   }
 }

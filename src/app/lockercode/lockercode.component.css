@@ -94,6 +94,52 @@
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(0, 0, 0, 0.2);
 }
+.getcode{
+  display:block;
+  margin:0 auto;
+  position:relative;
+  top:40px;
+  text-align: center;
+
+
+
+
+
+}
+.getcode1{
+  position: relative;
+  bottom:4px;
+  left:3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:green;
+  font-size:10px;
+  font-weight:500 ;
+  animation: opacityPulse 3s ease-out;
+  animation-iteration-count: infinite;
+  opacity:0;
+
+
+
+
+
+
+
+
+}
+
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
 @media screen and (max-width:575px) {
   .box {
     position: relative;
@@ -199,7 +245,7 @@
     width: 160px;
     height: 200px;
     position: relative;
-    bottom: 157px;
+    bottom: 156px;
   }
   .txt4 {
     font-size: 20px;

@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
-import{BehaviorSubject} from 'rxjs';
+import{BehaviorSubject, Subject} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class SharedataService {
   luggageNumber=new BehaviorSubject<any>([]);
   nrluggageBooked=new BehaviorSubject<any>([]);//
+
+showCode=new Subject()//pt get code
+
+
   show:boolean=true;
   getToggle(luggage:any){
     luggage.show=!luggage.show
+
   }
 luggages:any[]=[{
   place:32,code:"TREWE",name:'Available',price:5,hours:1,name1:"Booked"
@@ -44,10 +49,13 @@ getStorage(){
 }
   constructor() { }
 addToStorrage(luggage:any){
+
+
 if(this.storage.indexOf(luggage)!=-1){
   return
 };
-this.storage.push(luggage)
+this.storage.push(luggage);
+
 this.luggageNumber.next(this.storage);
 this.nrluggageBooked.next(this.storage);//
 };
@@ -56,4 +64,6 @@ removeFromStorage(luggage:any){
   this.luggageNumber.next(this.storage);
   this.nrluggageBooked.next(this.storage);//
 }
+
+
 }

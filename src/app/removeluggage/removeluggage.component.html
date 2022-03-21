@@ -1,5 +1,6 @@
 <header></header>
 <navbar></navbar>
+<terminalplaces></terminalplaces>
 <dates></dates>
 <advertising></advertising>
 <section>
@@ -18,7 +19,7 @@
       <div class='btn-btn' (click)="dec(luggage)"><i class="fa fa-minus myicon1" aria-hidden="true"></i></div>
     </div>
     <p class='price'>Price:<span class='price-value'>{{luggage.hours*luggage.price+5 | currency: "RON" }}</span></p>
-    <button class='btn-remove' (click)='removeStorage(luggage)'>Pay</button>
+    <button class='btn-remove' (click)='removeStorage(luggage)'><span class="pay-pay">Pay</span></button>
   </div>
 </div>
 </section>

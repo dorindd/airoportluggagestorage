@@ -105,7 +105,7 @@
   font-size: 11px;
   color: red;
   position: relative;
-  bottom: 52px;
+  bottom: 54px;
   text-transform: uppercase;
 }
 .label-name {
@@ -254,7 +254,7 @@
   }
   .txt-txt4 {
     position: relative;
-    bottom: 47px;
+    bottom:50px;
     font-size: 7px;
   }
   .btn-enter {
@@ -367,7 +367,7 @@
   }
   .txt-txt4 {
     position: relative;
-    bottom: 47px;
+    bottom:50px;
     font-size: 9px;
   }
   .btn-enter {
@@ -476,7 +476,7 @@
   }
   .txt-txt4 {
     position: relative;
-    bottom: 47px;
+    bottom:50px;
     font-size: 9px;
   }
   .btn-enter {

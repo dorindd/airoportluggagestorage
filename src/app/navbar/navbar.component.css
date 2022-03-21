@@ -12,10 +12,13 @@
   justify-content: space-around;
 }
 .nav-link {
+  position: relative;
+  top: 10px;
   text-transform: uppercase;
   color: white !important;
-  letter-spacing: 1px;
+
   font-weight: 1000;
+
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
 .nav-link:hover {
@@ -27,33 +30,28 @@
   height: 25px;
   background-color: rgb(63, 81, 181);
 }
-.check {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  color: #18dcff;
-  letter-spacing: 1px;
-  font-weight: 1000;
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  position: relative;
-  right: 210px;
-  cursor: pointer;
-  animation: opacityPulse 2s ease-out;
+.getcode {
+  position: absolute;
+  left: 2px;
+  z-index: 1;
+  width: 91px;
+  height: 20px;
+  border: 2px solid black;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+
+
+
+}
+
+.payment {
+  animation: opacityPulse 3s ease-in;
   animation-iteration-count: infinite;
   opacity: 0;
+  color: #18dcff;
 }
-@keyframes opacityPulse {
-  0% {
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    opacity: 0.0;
-  }
-}
-@media screen and (max-width:575px) {
+
+@media screen and (max-width: 575px) {
   .mynavbar {
     height: 57px;
   }
@@ -61,13 +59,17 @@
     position: relative;
     top: 10px;
     font-size: 10px;
-    background-color: #5B5E64;
+    padding: 5px;
+    background-color: #5b5e64;
   }
   .mycontainer {
     display: none;
   }
-  .check {
-    display: none;
+
+  .getcode {
+    position: absolute;
+    width: 67px;
+    left: 1px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -76,18 +78,18 @@
   }
   .nav-item {
     width: 33%;
-    background-color: #5B5E64;
-    position: relative;
-    top: 8px;
   }
   .nav-link {
+    background-color: #5b5e64;
     font-size: 11px;
   }
   .mycontainer {
     display: none;
   }
-  .check {
-    display: none;
+  .getcode {
+    position: absolute;
+    width: 68px;
+    left: -3px;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -99,9 +101,16 @@
     bottom: 11px;
   }
   .nav-link {
+    font-size: 15px;
     background-color: rgb(63, 81, 181) !important;
   }
   .mycontainer {
     height: 45px;
+  }
+  .getcode {
+    position: absolute;
+    width: 98px;
+    height: 22px;
+    left: 1px;
   }
 }

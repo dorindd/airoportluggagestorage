@@ -10,7 +10,7 @@ show1:boolean=false;
 show3:boolean=true;
 show10:boolean=false;
 show4:boolean=false;
-message:string="Full booked.Please try later";
+message:string="Fully Booked.Please Try Later.";
   constructor() { }
   ngOnInit(): void {
   }

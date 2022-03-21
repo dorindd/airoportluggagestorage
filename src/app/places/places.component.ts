@@ -6,7 +6,7 @@ import { SharedataService } from '../sharedata.service';
   styleUrls: ['./places.component.css']
 })
 export class PlacesComponent implements OnInit {
-nrluggage:any;
+nrluggage:any
 show:boolean=true;
 show1:boolean=true;
   constructor(private mysharedata:SharedataService) { }
