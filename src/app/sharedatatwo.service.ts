@@ -10,10 +10,11 @@ export class SharedatatwoService {
   show=new Subject();
   iconshow=new Subject();//pay
 
-
+;
 
   getToggle1(luggage: any) {
-    luggage.showenter = !luggage.showenter;
+     luggage.showenter = !luggage.showenter
+
   }
   luggages1: any[] = [
     {

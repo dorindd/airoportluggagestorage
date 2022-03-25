@@ -10,7 +10,7 @@ import { SharedatatwoService } from '../sharedatatwo.service';
 export class LuggaestorageComponent implements OnInit {
   showenter: boolean = false;
   storage: any[] = [];
-  nume: string = '';
+  nume: any ;
 payment:boolean = true;//pay
 
   constructor(
@@ -19,28 +19,60 @@ payment:boolean = true;//pay
 
   ) {}
   ngOnInit(): void {
+
+
     this.storage = this.mysharedata.getStorage();
+
+
   }
+
+
+  updateUser(event:any){
+    this.nume=(event.target as HTMLInputElement).value;
+
+
+
+  }
+
+
+
+
 
   enter(luggage: any) {
-    this.mysharedata1.getToggle1(luggage);
+
+
+      this.mysharedata1.getToggle1(luggage);
   }
+  randNumber: any = Math.floor(Math.random() * 1000000);
+
 
   getcheck(luggage: any) {
+
+
+
+
     if (
-      this.nume === 'TREWE' ||
-      this.nume === 'MNHGY' ||
-      this.nume === 'UJHGI' ||
-      this.nume === 'UJNBS' ||
-      this.nume === 'OINFK' ||
-      this.nume === 'MNBGL' ||
-      this.nume === 'ICFDX' ||
-      this.nume === 'WDYDX'
-    ) {
+      this.nume === 'TREWE'+ this.randNumber  ||
+      this.nume === 'MNHGY' + this.randNumber  ||
+      this.nume === 'UJHGI' + this.randNumber ||
+      this.nume === 'UJNBS' + this.randNumber ||
+      this.nume === 'OINFK' + this.randNumber ||
+      this.nume === 'MNBGL' + this.randNumber ||
+      this.nume === 'ICFDX' + this.randNumber ||
+      this.nume === 'WDYDX' + this.randNumber
+    )
+
+
+    {
+
+
       this.mysharedata1.addToStorrage1(luggage);
       this.mysharedata.removeFromStorage(luggage);
-      this.nume = '';
+
+this.nume='';
+
       this.mysharedata1.iconshow.next(this.payment)//pay
+
 
 
 
