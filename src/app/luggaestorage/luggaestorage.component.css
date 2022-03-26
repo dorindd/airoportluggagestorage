@@ -126,7 +126,7 @@ input {
 
 input::placeholder{
   font-size:12px;
-  color:grey;
+  color:red;
   text-indent:5px;
 }
 .container-input {
