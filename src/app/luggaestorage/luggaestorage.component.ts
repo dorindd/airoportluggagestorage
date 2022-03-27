@@ -46,6 +46,9 @@ payment:boolean = true;//pay
   randNumber: any = Math.floor(Math.random() * 1000000);
 
 
+
+
+
   getcheck(luggage: any) {
 
 
@@ -72,6 +75,8 @@ payment:boolean = true;//pay
 this.nume='';
 
       this.mysharedata1.iconshow.next(this.payment)//pay
+
+
 
 
 

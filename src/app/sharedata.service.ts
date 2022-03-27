@@ -7,6 +7,7 @@ export class SharedataService {
   luggageNumber=new BehaviorSubject<any>([]);
   nrluggageBooked=new BehaviorSubject<any>([]);//
 
+
 showCode=new Subject()//pt get code
 
 
@@ -58,6 +59,8 @@ this.storage.push(luggage);
 
 this.luggageNumber.next(this.storage);
 this.nrluggageBooked.next(this.storage);//
+
+
 };
 removeFromStorage(luggage:any){
   this.storage.splice(this.storage.indexOf(luggage),1);

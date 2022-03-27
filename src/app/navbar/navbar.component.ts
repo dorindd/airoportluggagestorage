@@ -16,6 +16,8 @@ export class NavbarComponent implements OnInit {
 
 
 
+
+
   constructor(private mysharedata: SharedataService,private paymentservice:SharedatatwoService,private route:Router) {}
   ngOnInit(): void {
     this.mysharedata.nrluggageBooked.subscribe((d) => {
@@ -34,6 +36,8 @@ this.paymentservice.iconshow.subscribe((d: any) => {
 
 
 
+
+
   }
 
 
@@ -42,9 +46,6 @@ this.paymentservice.iconshow.subscribe((d: any) => {
     else { this.route.navigate([`${pageName}`]) }
 
   }
-  getPay(pageName1: string, pageName: string) {
-    if (this.mypyment > 0) { this.route.navigate([`${pageName1}`]) }
-    else { this.route.navigate([`${pageName}`]) }
+ 
 
-  }
 }

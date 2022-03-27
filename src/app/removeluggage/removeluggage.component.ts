@@ -19,6 +19,8 @@ vizibil:boolean=true;
     this.storage1=this.mysharedata.getStorage1();
 
 
+
+
   }
   removeStorage(luggage:any){
    this.mysharedata.removeFromStorage1(luggage);
@@ -38,4 +40,7 @@ vizibil:boolean=true;
     luggage.hours --;
   }
   }
+
+ 
+
   }
