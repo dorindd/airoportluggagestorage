@@ -10,7 +10,9 @@ export class SharedatatwoService {
   show=new Subject();
   iconshow=new Subject();//pay
 
-;
+myPay=new BehaviorSubject<any>([]);//nav
+
+
 
   getToggle1(luggage: any) {
      luggage.showenter = !luggage.showenter
@@ -90,11 +92,14 @@ export class SharedatatwoService {
     return this.storage1;
   }
   constructor() {}
+
+
   addToStorrage1(luggage: any) {
     if (this.storage1.indexOf(luggage) != -1) {
       return;
     }
-    this.storage1.push(luggage)
+    this.storage1.push(luggage);
+    this.myPay.next(this.storage1);//nav
 
 
 
@@ -108,6 +113,8 @@ export class SharedatatwoService {
     this.luggageNumber1.next(this.storage1);
 
     this.show.next(this.storage1);//
+
+    this.myPay.next(this.storage1);//nav
 
 
 

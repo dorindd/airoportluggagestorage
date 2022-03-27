@@ -8,6 +8,7 @@ export class SharedataService {
   nrluggageBooked=new BehaviorSubject<any>([]);//
 
 
+
 showCode=new Subject()//pt get code
 
 
@@ -49,6 +50,7 @@ getStorage(){
   return this.storage
 }
   constructor() { }
+
 addToStorrage(luggage:any){
 
 
@@ -56,6 +58,7 @@ if(this.storage.indexOf(luggage)!=-1){
   return
 };
 this.storage.push(luggage);
+
 
 this.luggageNumber.next(this.storage);
 this.nrluggageBooked.next(this.storage);//

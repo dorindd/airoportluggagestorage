@@ -15,11 +15,21 @@ export class NavbarComponent implements OnInit {
   mypyment:any=false;//pay
 
 
-
+allPay:any=0
 
 
   constructor(private mysharedata: SharedataService,private paymentservice:SharedatatwoService,private route:Router) {}
   ngOnInit(): void {
+    this.paymentservice.myPay.subscribe((d: any) => {
+      this.allPay = d.length; //nav
+
+    })
+
+
+
+
+
+
     this.mysharedata.nrluggageBooked.subscribe((d) => {
       this.nrluggage = d.length;
     });
@@ -29,10 +39,13 @@ export class NavbarComponent implements OnInit {
 
     });
 
-this.paymentservice.iconshow.subscribe((d: any) => {
-  this.mypyment=d
 
-})
+
+    this.paymentservice.iconshow.subscribe((d: any) => {
+      this.mypyment = d
+
+    })
+
 
 
 
@@ -46,6 +59,11 @@ this.paymentservice.iconshow.subscribe((d: any) => {
     else { this.route.navigate([`${pageName}`]) }
 
   }
- 
+  getPay(pageName1: string, pageName: string) {
+    if (this.allPay > 0) { this.route.navigate([`${pageName1}`]) }
+    else { this.route.navigate([`${pageName}`]) }
+
+  }
+
 
 }

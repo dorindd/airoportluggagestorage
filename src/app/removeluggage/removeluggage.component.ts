@@ -12,11 +12,15 @@ storage1:any[]=[]
 vizibil:boolean=true;
 
 
+
   constructor(private mysharedata1:SharedataService,private mysharedata:SharedatatwoService,) { }
   ngOnInit(): void {
 
 
+
+
     this.storage1=this.mysharedata.getStorage1();
+
 
 
 
@@ -26,21 +30,26 @@ vizibil:boolean=true;
    this.mysharedata.removeFromStorage1(luggage);
 
 
+
    this.mysharedata1.getToggle(luggage);
    this.mysharedata.getToggle1(luggage);
    this.mysharedata.show.next(this.vizibil)
 
 
+
   }
   inc(luggage:any){
   luggage.hours ++
+
+
 }
   dec(luggage:any){
     if(luggage.hours>1){
     luggage.hours --;
+
+
   }
   }
 
- 
 
   }
