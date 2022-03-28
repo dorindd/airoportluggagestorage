@@ -27,6 +27,7 @@ import {MatCardModule} from '@angular/material/card';
 import { LocationComponent } from './location/location.component';
 import { TerminalplacesComponent } from './terminalplaces/terminalplaces.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TerminalComponent } from './terminal/terminal.component';
 
 
 
@@ -47,6 +48,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     AdvertisingComponent,
     LocationComponent,
     TerminalplacesComponent,
+    TerminalComponent,
 
   ],
   imports: [

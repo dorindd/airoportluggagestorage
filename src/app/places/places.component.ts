@@ -12,8 +12,8 @@ show1:boolean=true;
   constructor(private mysharedata:SharedataService) { }
   ngOnInit(): void {
     this.mysharedata.luggageNumber.subscribe(d=>{
-      this.nrluggage=8-d.length;
-      if(this.nrluggage!=8){
+      this.nrluggage=12-d.length;
+      if(this.nrluggage!=12){
         this.show=true;
         this.show1=false;
       }else{

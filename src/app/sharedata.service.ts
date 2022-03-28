@@ -18,33 +18,58 @@ showCode=new Subject()//pt get code
 
   }
 luggages:any[]=[{
-  place:32,code:"TREWE",name:'Available',price:5,hours:1,name1:"Booked"
+  place:32,code:"TREWE",name:'Available',price:5,hours:1,terminal:"Terminal 3",name1:"Booked"
 },
 {
-  place:33,code:"MNHGY",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 33, code: "MNHGY", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:34,code:"UJHGI",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 34, code: "UJHGI", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:35,code:"UJNBS",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 35, code: "UJNBS", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:36,code:"OINFK",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 36, code: "OINFK", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:37,code:"MNBGL",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 37, code: "MNBGL", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:38,code:"ICFDX",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 38, code: "ICFDX", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
   place:39,code:"WDYDX",name:'Available',price:5,hours:1,name1:"Booked"
 }
 ];
+
+terminal:any[]=[
+  {
+  place: 9, code: "WVGTR", name: 'Available', price: 5, hours: 1, terminal: "Terminal 2", name1:"Booked"
+},
+{
+  place: 11, code: "NMJGR", name: 'Available', price: 5, hours: 1, terminal: "Terminal 2", name1:"Booked"
+},
+{
+  place: 18, code: "DRTYD", name: 'Available', price: 5, hours: 1, terminal: "Terminal 2", name1:"Booked"
+},
+{
+  place: 21, code: "MNHGR", name: 'Available', price: 5, hours: 1, terminal: "Terminal 2", name1:"Booked"
+}
+
+];
+
+
+
 getLuggages(){
   return this.luggages
 }
+
+getTerminal(){
+  return this.terminal
+}
+
+
 storage:any[]=[];
 getStorage(){
   return this.storage

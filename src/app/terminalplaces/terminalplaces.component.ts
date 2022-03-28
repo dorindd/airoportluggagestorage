@@ -15,7 +15,7 @@ export class TerminalplacesComponent implements OnInit {
   ngOnInit(): void {
     this.service.luggageNumber1.subscribe((data) => {
       this.places = data;
-      this.places = 'place available.Check terminal 3';
+      this.places = 'Place available.Check terminals 2 & 3 ';
     });
     this.service.show.subscribe((data) => {
       this.myview = data;
@@ -23,7 +23,7 @@ export class TerminalplacesComponent implements OnInit {
       if (this.places.length > 0) {
         setTimeout(() => {
           this.myview = false;
-        }, 2800);
+        }, 6000);
       }
     });
   }

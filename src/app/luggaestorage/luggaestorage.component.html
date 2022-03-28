@@ -17,14 +17,15 @@
       <i class="fa fa-suitcase myicon1" aria-hidden="true"></i>
     </div>
     <p class='txt3'>BOOKED</p>
-    <p class='txt4'>Enter your digit code </p>
+    <p class='txt4'> Security Digit code</p>
+
     <p class='txt-txt4'>Don't share it with anyone else.</p>
     <button mat-raised-button class="btn-enter" (click)="enter(luggage)"><span class='check-code'> Get Your Code
       </span></button>
     <button class='btn-btn1' mat-raised-button color="warn" (click)='cancel(luggage)'><span
         class='cancel-btnname'>Cancel</span></button>
     <p class="terminal">
-      <i class="fa fa-plane myicon" aria-hidden="true"></i><span class="ter-ter">Terminal 3</span>
+      <i class="fa fa-plane myicon" aria-hidden="true"></i><span class="ter-ter">{{luggage.terminal}}</span>
     </p>
     <span *ngIf="luggage.showenter">
       <div class='display'>

@@ -233,7 +233,9 @@ mat-spinner{
   top: 3px;
   color: green;
 }
-
+.terminal{
+  color:navy;
+}
 .icon-icon {
   display: flex;
   justify-content: center;
@@ -243,7 +245,7 @@ mat-spinner{
 }
 .button {
   position: relative;
-  left: 15px;
+  left: 35px;
 }
 .btn-btn {
   border: none;
@@ -265,7 +267,7 @@ input {
 }
 .myicon2 {
   position: relative;
-  left: 35px;
+  left: 20px;
   bottom: 4px;
   font-size: 30px;
 }
@@ -283,6 +285,8 @@ input {
   text-align: center;
 }
 .price {
+  position: relative;
+  top:15px;
   text-align: center;
   font-size: 15px;
   text-transform: uppercase;
@@ -294,6 +298,18 @@ input {
   color: green;
   position: relative;
   left: 4px;
+}
+.txt-txt1{
+ text-align: center;
+
+  font-weight: 500;
+  position: relative;
+ bottom:10px;
+  color: green;
+
+
+
+
 }
 @media screen and (max-width:575px) {
 

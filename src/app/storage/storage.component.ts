@@ -8,8 +8,8 @@ export class StorageComponent implements OnInit {
 show:boolean=true;
 show1:boolean=false;
 show3:boolean=true;
-show10:boolean=false;
-show4:boolean=false;
+
+
 message:string="Fully Booked.Please Try Later.";
   constructor() { }
   ngOnInit(): void {
@@ -24,11 +24,11 @@ this.show=true;
   }
   getData1():void{
     this.show3=false;
-    this.show4=true;
+
       }
       getBack1():void{
     this.show3=true;
-        this.show4=false;
+        
       }
       getBack5(){}
 }

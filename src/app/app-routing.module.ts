@@ -5,6 +5,7 @@ import { LockercodeComponent } from './lockercode/lockercode.component';
 import { LuggaestorageComponent } from './luggaestorage/luggaestorage.component';
 import { MainComponent } from './main/main.component';
 import { RemoveluggageComponent } from './removeluggage/removeluggage.component';
+import { TerminalComponent } from './terminal/terminal.component';
 
 const routes: Routes = [
   {path:"",component:MainComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'luggaestorage',component:LuggaestorageComponent},
   {path:"removeluggage",component:RemoveluggageComponent},
   {path:"location",component:LocationComponent},
+  {path:"terminal",component:TerminalComponent},
 ];
 
 @NgModule({

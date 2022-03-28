@@ -65,7 +65,15 @@ payment:boolean = true;//pay
       this.nume === 'OINFK' + this.randNumber ||
       this.nume === 'MNBGL' + this.randNumber ||
       this.nume === 'ICFDX' + this.randNumber ||
-      this.nume === 'WDYDX' + this.randNumber
+      this.nume === 'WDYDX' + this.randNumber ||
+
+
+      this.nume === 'WVGTR' + this.randNumber ||
+      this.nume === 'NMJGR' + this.randNumber ||
+      this.nume === 'DRTYD' + this.randNumber ||
+      this.nume === 'MNHGR' + this.randNumber 
+
+
     )
 
 
@@ -79,7 +87,7 @@ this.nume='';
 
       this.mysharedata1.iconshow.next(this.payment)//pay
 
-      
+
 
 
 
