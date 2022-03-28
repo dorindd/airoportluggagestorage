@@ -39,7 +39,7 @@ luggages:any[]=[{
   place: 38, code: "ICFDX", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 },
 {
-  place:39,code:"WDYDX",name:'Available',price:5,hours:1,name1:"Booked"
+  place: 39, code: "WDYDX", name: 'Available', price: 5, hours: 1, terminal: "Terminal 3", name1:"Booked"
 }
 ];
 
