@@ -4,7 +4,34 @@
 <dates></dates>
 <advertising></advertising>
 <section>
-<h1 class='txt'>pay and take your luggage</h1>
+
+
+
+
+
+
+
+
+<div class="show">
+  <div class="myload">
+ <mat-spinner [diameter]="25" *ngIf="show"></mat-spinner>
+ <p class='processing' *ngIf="show">Payment processing ...</p>
+  </div>
+  <p class='txt' *ngIf="show1">Payment completed.<br>
+    Please take your luggage</p>
+   <h1 class='txt11' *ngIf="show2">Payment</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
   <div class="box" *ngFor="let luggage of storage1">
     <p class='txt1'>locker nr {{luggage.place}}</p>
@@ -12,7 +39,17 @@
     <div class="icon-icon">
       <i class="fa fa-suitcase myicon" aria-hidden="true"></i>
     </div>
-    <p class='txt1'>pay and take your luggage</p>
+
+
+  <p class='txt1'>pay and take your luggage</p>
+
+
+
+
+
+
+
+    <!-- <p class='txt1'>pay and take your luggage</p> -->
     <div class="button">
       <div class='btn-btn' (click)="inc(luggage)"><i class="fa fa-plus myicon1" aria-hidden="true"></i></div>
       <input type="text" value="{{luggage.hours}}"><i class="fa fa-clock-o myicon2" aria-hidden="true"></i>
