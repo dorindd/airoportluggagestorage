@@ -10,6 +10,8 @@ export class SharedatatwoService {
   show=new Subject();
   iconshow=new Subject();//pay
 
+ 
+
 myPay=new BehaviorSubject<any>([]);//nav
 
 

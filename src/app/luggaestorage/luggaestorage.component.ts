@@ -43,6 +43,9 @@ payment:boolean = true;//pay
 
       this.mysharedata1.getToggle1(luggage);
   }
+
+
+
   randNumber: any = Math.floor(Math.random() * 1000000);
 
 
@@ -75,6 +78,8 @@ payment:boolean = true;//pay
 this.nume='';
 
       this.mysharedata1.iconshow.next(this.payment)//pay
+
+      
 
 
 

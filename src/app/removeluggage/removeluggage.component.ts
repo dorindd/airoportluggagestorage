@@ -28,8 +28,14 @@ show1:any=false;//
 show2:any=true;//
 
 
+
+
   constructor(private mysharedata1:SharedataService,private mysharedata:SharedatatwoService,private route:Router) { }
   ngOnInit(): void {
+ 
+
+
+
 
     this.mysharedata.myPay.subscribe((data:any)=>{//nav
       this.allPay=data.length

@@ -233,10 +233,7 @@ mat-spinner{
   top: 3px;
   color: green;
 }
-.code {
-  color: black;
-  font-size: 15px;
-}
+
 .icon-icon {
   display: flex;
   justify-content: center;
