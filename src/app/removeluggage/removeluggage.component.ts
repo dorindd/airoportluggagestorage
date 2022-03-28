@@ -61,7 +61,7 @@ setTimeout(() =>{
     this.show2=true
 
 
-  },1000)
+  },1700)
 
 },1000)
 
@@ -79,7 +79,7 @@ setTimeout(() =>{
             this.show1 = false;
             this.route.navigate([`${'/'}`])
 
-          },3000)
+          },4000)
         }
 
 
